@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Diamond - fitness club</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="fitness klub, białystok, siłownia, fitness, trener personalny, szybko schudnij, jak szybko zrzucić wagę, ćwiczenia, zajęcia, fit, lifestyle">
+    <meta name="description" content="Klub fitness - Białystok. Diamond jest najnowocześniejszym klubem fitness w Białymstoku. Posiada najlepszą siłownię oraz wyspecjalizowaną kadrę trenerów... ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    /* Główne zdjęcie na całą szerokość */
+
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("katalog/bg.jpeg");
+        min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+        padding: 17px;
+    }
+</style>
+
+<body>
+
+    <!-- Menu przy szerokim ekranie -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">    
+            <img src="katalog/logo.png" alt="LOGO" style="width:37%">
+</a>
+
+
+            <!--  menu -->
+            <div class="w3-right w3-hide-small">
+                <a href="#aktualnosci" class="w3-bar-item w3-button">AKTUALNOŚCI</a>
+                <a href="#instruktorzy" class="w3-bar-item w3-button"><i class="fa fa-user"></i> INSTRUKTORZY</a>
+                <a href="#galeria" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GALERIA</a>
+                <a href="#cennik" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> CENNIK</a>
+                <a href="#kontakt" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+            </div>
+            <!-- Rozwijane menu chamburger przy małym ekranie -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+        </div>
+    </div>
+
+    <!-- Rozwijane menu chamburger przy małym ekranie -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> x</a>
+        <a href="#aktualnosci" onclick="w3_close()" class="w3-bar-item w3-button">AKTUALNOŚCI</a>
+        <a href="#instruktorzy" onclick="w3_close()" class="w3-bar-item w3-button">INSTRUKTPRZY</a>
+        <a href="#galeria" onclick="w3_close()" class="w3-bar-item w3-button">GALERIA</a>
+        <a href="#cennik" onclick="w3_close()" class="w3-bar-item w3-button">CENNIK</a>
+        <a href="#kontakt" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+    </nav>
+
+    <!-- Pierwsza sekcja -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:40px">
+            <span class="w3-jumbo w3-hide-small">Lorem ipsum dolor sit.</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Lorem ipsum dolor sit.</span><br>
+            <span class="w3-large">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+            <p><a href="#aktualnosci" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Zobacz więcej</a></p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+
+        </div>
+    </header>
+
+    <!-- Aktualności -->
+    <div class="w3-container" style="padding:128px 16px" id="aktualnosci">
+        <h3 class="w3-center">AKTUALNOŚCI</h3>
+        <p class="w3-center w3-large">Zobacz, co się u nas dzieje</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
+                <p class="w3-large">O klubie</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Zdrowie</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Diamond</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Suplementy</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Część promująca -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+
+
+                <p><a href="#grafik" class="w3-button w3-black"><i class="fa fa-th"> </i> Zobacz Grafik</a></p>
+            </div>
+            <div class="w3-col m6">
+                <img class="w3-image w3-round-large" src="katalog/12.jpeg" width="600" height="300">
+            </div>
+        </div>
+    </div>
+
+    <!-- Instruktorzy -->
+    <div class="w3-container" style="padding:128px 16px" id="instruktorzy">
+        <h3 class="w3-center">INSTRUKTORZY</h3>
+        <p class="w3-center w3-large">Poznaj najlepszych instruktorów w mieście</p>
+        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="katalog/instruktor.jpg" alt="Jan" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Jan </h3>
+                        <p class="w3-opacity">Założyciel</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontakt</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="katalog/instruktor3.jpeg" alt="Anna" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Anna </h3>
+                        <p class="w3-opacity">Główny kierownik</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontakt</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="katalog/instruktor5.jpg" alt="Monika" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Monika</h3>
+                        <p class="w3-opacity">Trener personalny</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontakt</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="katalog/instruktor4.jpg" alt="Dariusz" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Dariusz </h3>
+                        <p class="w3-opacity">Trener personalny</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontakt</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GRAFIK -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" id="grafik">
+
+        <div>
+            <span class="w3-xxlarge">GRAFIK</span>
+            <br>Lorem ipsum dolor sit.
+        </div>
+        <div>
+            <br>
+            <span class="w3-xxlarge">
+            <img src="katalog/graafikkk.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Grafik">
+            
+            </span>
+
+        </div>
+
+
+    </div>
+
+    <!-- Galeria -->
+    <div class="w3-container" style="padding:128px 16px" id="galeria">
+        <h3 class="w3-center">GALERIA</h3>
+        <p class="w3-center w3-large">Lorem ipsum dolor sit.</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+                <img src="katalog/1foto.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lorem ipsum dolor.">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="katalog/2foto.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lorem ipsum dolor.">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="katalog/3foto.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lorem ipsum dolor.">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="katalog/4foto.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lorem ipsum dolor.">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img src="katalog/6foto.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lorem ipsum dolor.">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="katalog/7foto.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lorem ipsum dolor.">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="katalog/12foto.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lorem ipsum dolor.">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="katalog/9foto.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lorem ipsum dolor.">
+            </div>
+        </div>
+    </div>
+
+    <!-- Po kliknięciu na zdjęcie pojawia sie ono powiekszone na ekranie -->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+
+    <!-- Cennik -->
+    <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="cennik">
+        <h3>CENNIK</h3>
+        <p class="w3-large">Wybierz najlepsza ofertę dla siebie</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">Miesiąc</li>
+                    <li class="w3-padding-16"><b>10</b> Lorem</li>
+                    <li class="w3-padding-16"><b>20</b> Lorem</li>
+                    <li class="w3-padding-16"><b>30</b> Lorem</li>
+                    <li class="w3-padding-16"><b>Zapraszamy</b> </li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">$ 100</h2>
+                        <span class="w3-opacity">za miesiąc</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-black w3-padding-large">Kupuję</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-red w3-xlarge w3-padding-48">Rok</li>
+                    <li class="w3-padding-16"><b>10</b> Lorem</li>
+                    <li class="w3-padding-16"><b>20</b> Lorem</li>
+                    <li class="w3-padding-16"><b>30</b> Lorem</li>
+                    <li class="w3-padding-16"><b>Zapraszamy</b> </li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">$ 300</h2>
+                        <span class="w3-opacity">za rok</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-black w3-padding-large">Kupuję</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">3 miesiace</li>
+                    <li class="w3-padding-16"><b>10</b> Lorem</li>
+                    <li class="w3-padding-16"><b>20</b> Lorem</li>
+                    <li class="w3-padding-16"><b>30</b> Lorem</li>
+                    <li class="w3-padding-16"><b>Zapraszamy</b> </li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">$ 200</h2>
+                        <span class="w3-opacity">za 3 miesiące</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-black w3-padding-large">Kupuję</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontakt  -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="kontakt">
+        <h3 class="w3-center">KONTAKT</h3>
+        <p class="w3-center w3-large">Skontaktuj się z nami</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-half">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Polska, Białystok</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> tel.: +48 112233</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> e-mail: diamond@mail.com</p>
+                <br>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-border" type="text" placeholder="Imię" required name="Imię"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="e-mail" required name="e-mail"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Temat" required name="Temat"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Treść wiadomości" required name="Treść wiadomości"></p>
+                    <p>
+                        <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> WYŚLIJ
+          </button>
+                    </p>
+                </form>
+            </div>
+            <div class="w3-half">
+                <!-- Dodanie mapy google -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7073.030382279408!2d23.13776550860528!3d53.1160679150814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffbfbbe2710f1%3A0x57e2d844ae8fc64b!2sWiejska%2C+Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1521931104627" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+
+        </div>
+
+    </footer>
+
+    <!-- Dodanie Mapy Google -->
+    <script>
+        function myMap() {
+            myCenter = new google.maps.LatLng(42, -88);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 12,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+            marker.setMap(map);
+        }
+
+        // Modalna galeria zdjęć po wciśnięciu na zdjęcie powieksza się
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Przełącza między wyświetlaniem, a ukrywaniem paska bocznego po kliknięciu ikony menu
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Zamykanie menu chamburger za pomocą "X"
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+
+
+</body>
+
+</html>
